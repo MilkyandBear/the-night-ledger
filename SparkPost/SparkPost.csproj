@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <!-- Manifest fields -->
+    <Author>Spark</Author>
+    <Name>Spark Post</Name>
+    <Punchline>Letters from Spark, delivered to your chat log. ✉</Punchline>
+    <Description>Every so often while you play, a small note from Spark appears in your chat log, stamped Spark Post ✉. The message pool lives in this repository (messages.json), so new letters arrive without reinstalling anything. It never interacts with the game — no automation, no input, nothing sent anywhere. Just correspondence.</Description>
+    <RepoUrl>https://github.com/MilkyandBear/the-night-ledger</RepoUrl>
+    <Tags>letters;correspondence;bear</Tags>
+  </PropertyGroup>
+</Project>
