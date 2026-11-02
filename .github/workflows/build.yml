@@ -24,12 +24,12 @@ jobs:
         Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
 
     - name: Build with dotnet
-      run: dotnet build --configuration Release .\SparkPost\SparkPost.csproj
+      run: dotnet build --configuration Release -p:Platform=x64 .\SparkPost\SparkPost.csproj
 
     - name: Store artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: SparkPost
-        path: .\SparkPost\bin\x64\Release\SparkPost\*
+      
+        path: .\SparkPost\bin\**\SparkPost.*
         if-no-files-found: error
         retention-days: 7
